@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:minWidth="350dp"
+        android:orientation="vertical"
+        tools:minHeight="400dp">
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/half_round"
+            android:backgroundTint="@color/light_black"
+            android:gravity="center|start"
+            android:text="@string/classify"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tag_rv"
+            android:layout_width="match_parent"
+            android:layout_height="275dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/tag_cancel"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:paddingVertical="8dp"
+            android:text="@string/cancel"
+            android:textSize="17sp"
+            app:backgroundTint="@color/light_black" />
+
+    </LinearLayout>
+</layout>

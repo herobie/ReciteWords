@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/half_round"
+        android:backgroundTint="@color/white"
+        android:minWidth="350dp"
+        android:orientation="vertical"
+        tools:minHeight="400dp">
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center|start"
+            android:background="@drawable/half_round"
+            android:backgroundTint="@color/light_black"
+            android:gravity="center|start"
+            android:text="@string/new_word"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputEditRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:hint="@string/words">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_word"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:hint="@string/words" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputEditRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:hint="@string/translate">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_translate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                        tools:hint="@string/translate" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/translate_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"></LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_new_translate"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:backgroundTint="@android:color/transparent"
+                    app:srcCompat="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputEditRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:hint="@string/tags">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_tags"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_baseline_arrow_drop_down_24"
+                        android:textColorHint="@color/black"
+                        tools:hint="@string/tags" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/TextInputEditRadius"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="12dp"
+                    android:hint="@string/example_sentence">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ed_examples"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:hint="@string/example_sentence" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/sentences_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/btn_newSentence"
+                    android:layout_width="match_parent"
+                    android:layout_height="16dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+
+                <TextView
+                    android:id="@+id/tv_word_warning"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="end"
+                    android:textColor="#FF0000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="7dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_word_cancel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/deep_white"
+                        android:text="@string/cancel" />
+
+                    <Button
+                        android:id="@+id/btn_word_confirm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/light_grey"
+                        android:text="@string/confirm" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

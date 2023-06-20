@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ReciteWords</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_placeholder" translatable="false">Hello</string>
+    <string name="words">Words</string>
+    <string name="sentences">Sentences</string>
+    <string name="translate">translate</string>
+    <string name="example_sentence">example sentence</string>
+    <string name="confirm">confirm</string>
+    <string name="description_placeholder">v. used as a greeting when you meet sb.</string>
+    <string name="example_sentences_placeholder" translatable="false">Hello , is there anybody there ?</string>
+    <string name="tags_placeholder">greeting , society , friendly</string>
+    <string name="cancel">cancel</string>
+    <string name="new_word">   create new word</string>
+    <string name="update_word">  update word</string>
+    <string name="tags">tags</string>
+    <string name="more_sentences">more_sentences</string>
+    <string name="more_tags">more_tags</string>
+    <string name="chinese_translate_placeholder" translatable="false">v.你好</string>
+    <string name="classify">Classify</string>
+</resources>
